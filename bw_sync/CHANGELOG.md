@@ -1,5 +1,8 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 2.0.0
+- Update to latest Add-On Template
+
 ## 1.2.0
 
 - Add an apparmor profile

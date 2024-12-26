@@ -1,0 +1,47 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Bitwarden secrets for Home Assistant
+version: "2.0.0"
+slug: bw-cli-secrets
+description: Manage Home Assistant secrets easily from Bitwarden
+startup: application
+stage: stable
+boot: auto
+url: https://github.com/kleinerhobbit/hass-addons/tree/master/bw-synch
+hassio_role: default
+hassio_api: true
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - homeassistant_config:rw
+  - share:rw
+  - addon_config:rw
+options:
+  log_level: info
+  server: http://a0d7b996-bitwarden:7277/
+  username: "ha@localhost.lan"
+  password: "homeassistant"
+  organization: "My Organization"
+  logintype: Username
+  repeat:
+    enabled: false
+    interval: 300
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)
+  message: "str?"
+  server: "str"
+  logintype: list(API|Username)
+  username: "str?"
+  password: "password"
+  organization: "str?"
+  clientid: "str?"
+  clientsecret: "password?"
+  repeat:
+    enabled: bool
+    interval: int?
+  secrets_file: "str?"
+#image: "ghcr.io/home-assistant/{arch}-addon-example"
