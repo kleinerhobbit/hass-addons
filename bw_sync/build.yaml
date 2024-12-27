@@ -8,4 +8,4 @@ labels:
   org.opencontainers.image.source: "https://alxx.nl/home-assistant-addons/"
   org.opencontainers.image.licenses: "Apache License 2.0"
 args:
-  BW_CLI_VERSION: "2021.09.0"
+  BW_CLI_VERSION: "1.22.1"
