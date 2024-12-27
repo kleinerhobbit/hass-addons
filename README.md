@@ -21,6 +21,8 @@ This repository contains the following add-ons
 
 _Bw_sync add-on for easy synchronisation of your Bitwarden Secrets._
 
+--> Cloned from https://github.com/alex3305/home-assistant-addons/tree/master/bitwarden-secrets
+
 <!--
 
 Notes to developers after forking or using the github template feature:

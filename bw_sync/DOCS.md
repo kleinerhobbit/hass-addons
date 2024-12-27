@@ -9,7 +9,7 @@ Easily manage your Home Assistant secrets from Bitwarden.
 Follow these steps to get the add-on installed on your system:
 
 1. Navigate in your Home Assistant frontend to __Supervisor -> Add-on Store__
-2. Add this new repository by URL (`https://github.com/alex3305/home-assistant-addons`)
+2. Add this new repository by URL (`https://github.com/kleinerhobbit/hass-addons`)
 3. Find the "Bitwarden secrets for Home Assistant" add-on and click it.
 4. Click on the "INSTALL" button
 
@@ -19,7 +19,15 @@ You will need to have a Bitwarden account to use. It is also recommended that yo
 
 > _**WARNING** Running this add-on will overwrite your `secrets.yaml` file and other secret files you retrieve from Bitwarden! Make a snapshot/backup of your Home Assistant configuration before proceeding._
 
-> _See my personal [Bitwarden set up](https://alex3305.github.io/home-assistant-docs/add-ons/bitwarden/) for more information regarding the Bitwarden setup._
+
+### Login-Types
+
+There are two different Login-types for Bitwarden Login.
+
+- username : For Login with username and Password
+- API : For Login with ClientSecret --> (`https://bitwarden.com/help/personal-api-key/`)
+
+Unfortunately to unlock the Vault in API Mode, the Password for the User is still needed.
 
 ### Bitwarden management
 
@@ -120,19 +128,32 @@ more severe level, e.g., `debug` also shows `info` messages. By default,
 the `log_level` is set to `info`, which is the recommended setting unless
 you are troubleshooting.
 
-### Option `bitwarden.server` (required)
+### Option `server` (required)
 
 Bitwarden server. This defaults to the DNS name of the Vaultwarden Home Assistand add-on, but can be changed to your liking.
 
-### Option `bitwarden.username` (required)
+### Option `username` (required)
 
 The username to login to Bitwarden with.
 
-### Option `bitwarden.password` (required)
+### Option `password` (required)
 
 The password to login to Bitwarden with. This can optinoally be changed to a secret value (ie. `!secret bitwarden_password`) after the first sync.
+This is used for both Login-types (unfortunately).
 
-### Option `bitwarden.organization` (required)
+### Option `logintype` (required)
+
+The desired Login-type that is used for Bitwarden Login. (Default is username)
+
+### Option `clientid` (required)
+
+The ClientID for API Login.
+
+### Option `clientsecret` (required)
+
+The Clientsecret for API Login.
+
+### Option `organization` (required)
 
 The required organization that is used to retrieve your secret items.
 
