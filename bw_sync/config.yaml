@@ -3,11 +3,7 @@ name: Bitwarden secrets for Home Assistant
 version: "2.0.0"
 slug: bw-cli-secrets
 description: Manage Home Assistant secrets easily from Bitwarden
-startup: application
-stage: stable
-boot: auto
 url: https://github.com/kleinerhobbit/hass-addons/tree/master/bw-synch
-hassio_role: default
 hassio_api: true
 arch:
   - armhf
