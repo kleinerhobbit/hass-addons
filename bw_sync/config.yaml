@@ -40,4 +40,4 @@ schema:
     enabled: bool
     interval: int?
   secrets_file: "str?"
-#image: "ghcr.io/home-assistant/{arch}-addon-example"
+image: "ghcr.io/kleinerhobbit/{arch}-bw_synch"
