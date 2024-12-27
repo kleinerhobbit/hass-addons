@@ -24,8 +24,8 @@ You will need to have a Bitwarden account to use. It is also recommended that yo
 
 There are two different Login-types for Bitwarden Login.
 
-- username : For Login with username and Password
-- API : For Login with ClientSecret --> (`https://bitwarden.com/help/personal-api-key/`)
+- `username` : For Login with username and Password
+- `API` : For Login with ClientSecret --> [Personal API Key for CLI Authentication](https://bitwarden.com/help/personal-api-key/)
 
 Unfortunately to unlock the Vault in API Mode, the Password for the User is still needed.
 
@@ -100,11 +100,11 @@ is parsed into `google_assistant_service_key.json` in your Home Assistant config
 
 ```yaml
 log_level: info
-bitwarden:
-  server: 'http://a0d7b954-bitwarden:7277/'
-  username: homeassistant@localhost.lan
-  password: homeassistant
-  organization: Home Assistant
+server: http://a0d7b996-bitwarden:7277/
+username: homeassistant@localhost.lan
+password: homeassistant
+organization: Home Assistant
+logintype: Username
 repeat:
   active: false
   interval: 300

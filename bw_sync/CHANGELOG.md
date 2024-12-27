@@ -2,6 +2,7 @@
 
 ## 2.0.0
 - Update to latest Add-On Template
+- Add Login Option API for Login with ClientSecret
 
 ## 1.2.0
 
