@@ -1,6 +1,7 @@
 
 # Unofficial Home Assistant Add-ons: Bitwarden secrets for Home Assistant
 ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
+![Build and test bw-synch](https://github.com/kleinerhobbit/hass-addons/actions/workflows/builder.yaml/badge.svg?branch?master)
 
 Forked from @alex3305 
 
@@ -12,7 +13,7 @@ Easily manage your Home Assistant secrets from Bitwarden.
 [armv7-shield]: https://img.shields.io/badge/armv7-no-red
 [i386-shield]: https://img.shields.io/badge/i386-no-red
 
-![Build and test bw-synch](https://github.com/kleinerhobbit/hass-addons/actions/workflows/builder.yaml/badge.svg?branch?master)
+
 
 ## About
 
