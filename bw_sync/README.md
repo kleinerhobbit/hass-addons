@@ -6,11 +6,11 @@ Forked from @alex3305
 
 Easily manage your Home Assistant secrets from Bitwarden.
 
-[aarch64-shield](https://img.shields.io/badge/aarch64-yes-green)
-[amd64-shield](https://img.shields.io/badge/amd64-yes-green)
-[armhf-shield](https://img.shields.io/badge/armhf-no-red)
-[armv7-shield](https://img.shields.io/badge/armv7-no-red)
-[i386-shield](https://img.shields.io/badge/i386-no-red)
+[aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green
+[amd64-shield]: https://img.shields.io/badge/amd64-yes-green
+[armhf-shield]: https://img.shields.io/badge/armhf-no-red
+[armv7-shield]: https://img.shields.io/badge/armv7-no-red
+[i386-shield]: https://img.shields.io/badge/i386-no-red
 
 ![Build and test bw-synch](https://github.com/kleinerhobbit/hass-addons/actions/workflows/builder.yaml/badge.svg?branch?master)
 
