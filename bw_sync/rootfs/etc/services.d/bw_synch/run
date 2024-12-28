@@ -1,5 +1,5 @@
 #!/usr/bin/with-contenv bashio
-
+export NODE_OPTIONS="--no-deprecation"
 # This script traps it's own errors, no need for a babysitting set -e.
 set +e
 
