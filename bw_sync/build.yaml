@@ -12,4 +12,4 @@ labels:
   org.opencontainers.image.licenses: "Apache License 2.0"
 args:
   TEMPIO_VERSION: "2021.09.0"
-  BW_CLI_VERSION: 1.22.1
+  BW_CLI_VERSION: "2024.12.0"
