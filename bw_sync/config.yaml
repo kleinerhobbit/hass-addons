@@ -6,8 +6,8 @@ description: Manage Home Assistant secrets easily from Bitwarden
 url: https://github.com/kleinerhobbit/hass-addons/tree/master/bw-synch
 hassio_api: true
 arch:
-  - armhf
-  - armv7
+#  - armhf
+#  - armv7
   - aarch64
   - amd64
 #  - i386
